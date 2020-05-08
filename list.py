@@ -9,3 +9,15 @@ cities = [
     'paris',
     'chicago'
 ]
+
+# captain = 'picard'
+# lieutenant = 'worf'
+# counselor = 'troi'
+# second = 'number one'
+
+star_trek = {
+    'captain':'picard',
+    'lieutenant':'worf',
+    'counselor':'troi',
+    'second':"number one"
+}
