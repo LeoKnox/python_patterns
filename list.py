@@ -21,3 +21,6 @@ star_trek = {
     'counselor':'troi',
     'second':"number one"
 }
+
+print(cities[1])
+print(f"the counselor is : {star_trek['counselor']}")
