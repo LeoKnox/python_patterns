@@ -1,2 +1,2 @@
 def mult(x, y):
-    print(f'{x} * {y} = {x * Y}')
+    print(f'{x} * {y} = {x * y}')
