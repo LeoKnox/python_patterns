@@ -8,3 +8,4 @@ flips = [
 
 print (flips.count('tails'))
 print(flips.pop())
+print (flips.count('tails'))
