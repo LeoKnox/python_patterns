@@ -3,5 +3,5 @@ y = [i for i in x if i%2 == 0]
 print(y)
 
 a = ['a', 'b', 'c']
-b = {c: [i for i in x] for c in a}
+b = {c: [i for i in x if i%2 == 0] for c in a}
 print(b)
