@@ -12,8 +12,18 @@ def quickSort(a):
         print(a)
         quickSort(a[0:len(a)-1])
 
+def qs(a):
+    if len(a) == 1:
+        print('hhhh')
+        return(a)
+    for i in range(0, len(a)-1):
+        print(i)
+        if a[i] > a[i+1]:
+            a[i], a[i+1] = a[i+1], a[i]
+    qs(a[0:len(a)-1])
+    print(a)
+
 alist = [6, 5, 9, 3, 1, 8]
 blist = [6, 5]
 clist = [6]
-quickSort(alist)
-swapGreater(alist)
+qs(alist)
