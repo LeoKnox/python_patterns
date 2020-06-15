@@ -1,7 +1,9 @@
-def swapGreater(a, b):
-    if a > b:
+def swapGreater(a):
+    if a[0] > a[1]:
+        a[0], a[1] = a[1], a[0]
         print(a)
     else:
-        print(f'{a} + {b}')
+        print(a)
 
-swapGreater(6,12)
+alist = [6, 5, 9, 3, 1, 8]
+swapGreater(alist)
