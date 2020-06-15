@@ -2,10 +2,12 @@ import random
 
 def makeMap(len, width):
     for j in range(0, width):
-        z = random.random()*10
+        z = random.random()*15
         print('*',end="")
-        if z // 2 == 1:
-            print('..', end='')
+        if z // 3 == 1:
+            len -= 1
+        elif z // 2 ==1:
+            len += 1
         for  i in range(0, len):
             print('.', end="")
         print('*')
