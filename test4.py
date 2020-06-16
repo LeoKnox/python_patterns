@@ -17,7 +17,7 @@ class Room:
         print()
 
     def newRoom(self):
-        x = [(str(x)+str(y)) for x in range(self.width) for y in range(self.length)]
+        x = [(str(x)+str(y)) for x in range(0, self.width, self.width-1) for y in range(self.length)]
         print(x)
 
 r1 = Room(5,5)
