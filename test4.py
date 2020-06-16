@@ -4,12 +4,17 @@ class Room:
         self.width = width
     
     def makeRoom(self):
+        for k in range(0, self.width+2):
+            print("*", end="")
+        print()
         for j in range(0, self.length):
             print("*", end="")
             for i in range(0, self.width):
                 print(".", end="")
             print("*")
-        print("*")
+        for k in range(0, self.width+2):
+            print("*", end="")
+        print()
 
 r1 = Room(5,5)
 r1.makeRoom()
