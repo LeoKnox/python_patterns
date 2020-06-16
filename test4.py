@@ -17,8 +17,11 @@ class Room:
         print()
 
     def newRoom(self):
-        x = ["." for x in range(0, self.width, self.width-1) for y in range(self.length)]
-        print(x)
+        x = [1, 3, 5]
+        y = [1, 5]
+        z = [(i,j) for i in x for j in y]
+        #x = ["." for x in range(0, self.width, self.width-1) for y in range(self.length)]
+        print(z)
 
 r1 = Room(5,5)
 r1.makeRoom()
