@@ -16,5 +16,10 @@ class Room:
             print("*", end="")
         print()
 
+    def newRoom(self):
+        x = [(str(x)+str(y)) for x in range(self.width) for y in range(self.length)]
+        print(x)
+
 r1 = Room(5,5)
 r1.makeRoom()
+r1.newRoom()
