@@ -22,7 +22,12 @@ class Room:
         z = [(i,j) for i in x for j in y]
         #x = ["." for x in range(0, self.width, self.width-1) for y in range(self.length)]
         print(z)
+    
+    def testTest(self):
+        x = [6, 4, 7, 3]
+        print([i for i in x if i > x[len(x)-1]])
 
 r1 = Room(5,5)
 r1.makeRoom()
 r1.newRoom()
+r1.testTest()
