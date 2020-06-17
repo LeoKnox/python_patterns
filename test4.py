@@ -21,7 +21,11 @@ class Room:
     def newRoom(self):
         data = ["*", "."]
         x = random.choices(data, k=25)
-        print(x)
+        for i in range(25):
+            if (i%5==0):
+                print()
+            print(x[i], end="")
+        print()
     
     def testTest(self):
         x = [6, 4, 7, 3]
