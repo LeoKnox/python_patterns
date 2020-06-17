@@ -1,3 +1,5 @@
+import random
+
 class Room:
     def __init__(self, length, width):
         self.length = length
@@ -17,15 +19,18 @@ class Room:
         print()
 
     def newRoom(self):
+        data = ["*", "."]
+        x = random.choices(data, k=25)
+        print(x)
+    
+    def testTest(self):
+        x = [6, 4, 7, 3]
+        print([i for i in x if i > x[len(x)-1]])
         x = [1, 3, 5]
         y = [1, 5]
         z = [(i,j) for i in x for j in y]
         #x = ["." for x in range(0, self.width, self.width-1) for y in range(self.length)]
         print(z)
-    
-    def testTest(self):
-        x = [6, 4, 7, 3]
-        print([i for i in x if i > x[len(x)-1]])
 
 r1 = Room(5,5)
 r1.makeRoom()
