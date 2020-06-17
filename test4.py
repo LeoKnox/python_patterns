@@ -20,7 +20,7 @@ class Room:
 
     def newRoom(self):
         data = ["*", "."]
-        x = random.choices(data, k=25)
+        x = random.choices(data, weights=[3, 7], k=25)
         for i in range(25):
             if (i%5==0):
                 print()
