@@ -26,6 +26,14 @@ class Room:
                 print()
             print(x[i], end="")
         print()
+        for y in range(25):
+            if x[y] == "*":
+                x[y-1] = "*"
+        for i in range(25):
+            if (i%5==0):
+                print()
+            print(x[i], end="")
+        print()
     
     def testTest(self):
         x = [6, 4, 7, 3]
@@ -37,6 +45,6 @@ class Room:
         print(z)
 
 r1 = Room(5,5)
-r1.makeRoom()
+#r1.makeRoom()
 r1.newRoom()
-r1.testTest()
+#r1.testTest()
