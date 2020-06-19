@@ -9,9 +9,12 @@ class Level:
     def show(self):
         for i in self.x_list:
             print(i)
+
+    def rn(self):
+        return(random.random())
     
     def build(self):
-        self.x_list.append(7)
+        self.x_list.append(self.rn())
 
 x = [4,6,9,1]
 l = Level()
