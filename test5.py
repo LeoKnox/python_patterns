@@ -11,7 +11,13 @@ class Level:
             print(i)
 
     def rn(self, x=8):
-        return(math.floor(random.random()*x))
+        random.seed(x)
+        print(random.random())
+        random.seed(x+1)
+        print(random.random())
+        random.seed(x)
+        print(random.random())
+        return(math.floor(random.random()*10))
 
     def build(self):
         self.x_list.append(self.rn())
