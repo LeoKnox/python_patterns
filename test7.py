@@ -1,6 +1,9 @@
 condition = True
 
-x = 1 if condition else 0
+num1 = 100_000
+num2 = 100000
+
+x = 1 if num1 == num2 else 0
 
 '''
 if condition:
